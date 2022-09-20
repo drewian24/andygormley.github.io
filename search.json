@@ -4,13 +4,27 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "1 + 1\n\n[1] 2"
+    "text": "An experienced leader with a strong understanding of compliance policy design who is capable of managing multiple teams and projects simultaneously. Currently leading the team responsible for Regulatory Compliance, 911 and Government Priority Services within the sphere of telecommunications. Works cross functionally with multiple teams and departments while reporting up to executive leadership."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\nSpring Arbor University | MBA | Sept 2006 - Dec 2008\nUniversity of Phoenix | B.S. in Information Technology | Sept 2004 - June 2006"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About",
+    "section": "Experience",
+    "text": "Experience\nT-Mobile\nRegulatory Compliance, 911 & Priority Services Senior Manager | Sept 2021 - Present\nResponsible for the overall health and effectiveness of 911 voice services, the planning and execution of government priority services and the compliance of T-Mobile network outage reporting to both state and federal entities.\nT-Mobile\nRegulatory Compliance Senior Manager | May 2014 - Sept 2021\nResponsible for the compliance program strategy and execution of T-Mobile’s network outage reporting to the Federal Communications Commission (FCC); consisting of investigations, report creation, tracking and validation. Managing T-Mobile’s Wireless Priority Service (WPS) and coordinating future WPS projects with DHS.\n\n\n\nT-Mobile\nField Operations | July 2007 - Feb 2009\nBuilt and maintained T-Mobile cellular sites located throughout the state of Michigan while providing 24/7 support for optimal network reliability. Played an integral role in installing and commissioning RDOA and E911 throughout western Michigan including 911 testing with PSAPs.\nUnited States Navy\nElectronics Technician Petty Officer 3rd Class | June 1997 - June 2003\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Andy’s Webpage",
+    "title": "Andy Gormley’s Website",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "par(family=\"sans\")\nplot(iris, col=\"steelblue\")"
   }
 ]
