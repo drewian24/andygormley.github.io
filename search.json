@@ -18,7 +18,14 @@
     "href": "about.html#experience",
     "title": "About",
     "section": "Experience",
-    "text": "Experience\nT-Mobile\nRegulatory Compliance, 911 & Priority Services Senior Manager | Sept 2021 - Present\nResponsible for the overall health and effectiveness of 911 voice services, the planning and execution of government priority services and the compliance of T-Mobile network outage reporting to both state and federal entities.\nT-Mobile\nRegulatory Compliance Senior Manager | May 2014 - Sept 2021\nResponsible for the compliance program strategy and execution of T-Mobile’s network outage reporting to the Federal Communications Commission (FCC); consisting of investigations, report creation, tracking and validation. Managing T-Mobile’s Wireless Priority Service (WPS) and coordinating future WPS projects with DHS.\n\n\n\nT-Mobile\nField Operations | July 2007 - Feb 2009\nBuilt and maintained T-Mobile cellular sites located throughout the state of Michigan while providing 24/7 support for optimal network reliability. Played an integral role in installing and commissioning RDOA and E911 throughout western Michigan including 911 testing with PSAPs.\nUnited States Navy\nElectronics Technician Petty Officer 3rd Class | June 1997 - June 2003\n\n1 + 1\n\n[1] 2"
+    "text": "Experience\nT-Mobile\nRegulatory Compliance, 911 & Priority Services Senior Manager | Sept 2021 - Present\nResponsible for the overall health and effectiveness of 911 voice services, the planning and execution of government priority services and the compliance of T-Mobile network outage reporting to both state and federal entities.\nT-Mobile\nRegulatory Compliance Senior Manager | May 2014 - Sept 2021\nResponsible for the compliance program strategy and execution of T-Mobile’s network outage reporting to the Federal Communications Commission (FCC); consisting of investigations, report creation, tracking and validation. Managing T-Mobile’s Wireless Priority Service (WPS) and coordinating future WPS projects with DHS.\n\n\n\nT-Mobile\nField Operations | July 2007 - Feb 2009\nBuilt and maintained T-Mobile cellular sites located throughout the state of Michigan while providing 24/7 support for optimal network reliability. Played an integral role in installing and commissioning RDOA and E911 throughout western Michigan including 911 testing with PSAPs.\nUnited States Navy\nElectronics Technician Petty Officer 3rd Class | June 1997 - June 2003"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "andygormley.blog",
+    "section": "",
+    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 20, 2022\n\n\nAndy Gormley\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 17, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 13, 2022\n\n\nAndy Gormley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -26,5 +33,26 @@
     "title": "Andy Gormley’s Website",
     "section": "",
     "text": "I am a PhD student at the University of Texas at Dallas. My research is centered around COVID policy, examining the different policies and effectiveness from both a top down level and a bottom up level. This website has some examples of work I have completed at UTD."
+  },
+  {
+    "objectID": "posts/Assignment 1/index.html",
+    "href": "posts/Assignment 1/index.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "Notice that in these examples the artist utilizes only black and white colors with straight lines, yet when looking at the two lower examples the objects appear to be almost three dimensional. From the same website I also pulled examples where the artist used rules to develop markings, these markings could be a language unto itself, but in this case it is nothing more than generative art utilizing rules and parameters to create the objects, they are pasted below.\n\n\n\n\n\nThis next example comes from the website https://www.generativehut.com/post/generative-art-python-tutorial-for-penplotter and was created using Python. Similar to the first example I cited this work appears to be three dimensional. The author/artist of this work shared the code they used in Python to create this work.\n\n\n\n\n\nMy final examples of generative art come from the website https://blog.simondlr.com/posts/new-markets-in-the-arts-generative-art-economies , here the author utilizes color to create their art. The first example is below.\n\n\n\n\n\nAgain this artwork has a three dimensional feel to it, what is interesting is that if you look closely at it you can see that the waves are created using lines. The example below (from the same artist and website) is an example utilizing colors and circles. It makes me think back to the days of looking into a cylindrical tube with colored beads as a child where I would see an array of kaleidoscopes by turning the tube with my hands.\n\n\n\n\n\nMy final example of generative art is a portrait that was created using this methodology. Again it comes from the same website as the two examples above.\n\n\n\n\n\n\nFor the Fall R Script I utilized the color of RoyalBlue4. While not a fall color it makes me think of winter, when an ice storm will leave all the plants outside covered in ice. The output of that code is below. There is a certain beauty in nature when plants are covered in ice. The only changes in the code was to replace the brown color with my own. I utilized the R Color Cheat sheet by Melanie Frazier to find the color I desired.\n\n\nSometimes I cannot help myself. Since I chose blue for winter I decided to edit the code a little more. The next plot shows what happens to plants when they are unable to hold up from the weight of the ice on them.\n\n\n\n\n\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/Assignment 2/index.html",
+    "href": "posts/Assignment 2/index.html",
+    "title": "Assignment 2",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   }
 ]
