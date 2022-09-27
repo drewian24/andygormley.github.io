@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andy Gormley">
-<meta name="dcterms.date" content="2022-09-20">
+<meta name="dcterms.date" content="2022-09-27">
 
-<title>Andy Gormley’s Website - Assignment 2</title>
+<title>Andy Gormley’s Website - Assignment 3</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,7 +93,7 @@ ul.task-list{list-style: none;}
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Assignment 2</h1>
+      <h1 class="title">Assignment 3</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">homework</div>
                 <div class="quarto-category">code</div>
@@ -115,7 +115,7 @@ ul.task-list{list-style: none;}
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 20, 2022</p>
+        <p class="date">September 27, 2022</p>
       </div>
     </div>
       
@@ -134,20 +134,80 @@ ul.task-list{list-style: none;}
 
 
 
-<p><strong>Assignment #2</strong></p>
-<p>The following images are from running the Murrel R Script.</p>
-<p>This first image is a scatterplot, no colors are utilized and it is still clear and easy to understand.</p>
+<p><strong>Assignment #3</strong></p>
+<p>The first ask for this assignment was to compare the regression models and the various ways in which they could be plotted. First let’s look at the data for the model. As you can see below, the Anscombe data file contains 44 x variables and 44 y variables. The x variables are whole numbers while the y variables are decimal numbers.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../../Rplot.jpeg" class="img-fluid figure-img"></p>
+<p><img src="acombe.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>The Anscombe has multiple models run within the R script, I will now look at the final four models. The four models are number numerically 1-4 and are simply linear models regressing the y to x variables (see below).</p>
+<p><em>lm1 &lt;- lm(y1 ~ x1, data=anscombe)</em></p>
+<p><em>lm2 &lt;- lm(y2 ~ x2, data=anscombe)</em></p>
+<p><em>lm3 &lt;- lm(y3 ~ x3, data=anscombe)</em></p>
+<p><em>lm4 &lt;- lm(y4 ~ x4, data=anscombe)</em></p>
+<p>The included plots within the R script for the above models can be seen below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="4modeloutput.jpeg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>The four models have a simplistic yet effective layout. The text is done in Black, the regression line in Blue and the data points in Orange (with a red border). These contrasting colors enable the eye to quickly discern the data pattern and how it interacts with the regression line. Looking specifically at x3 and x4, the reader can see each linear model has an outlier data point. If the charts only featured a single color this would still be perceptible, but it would not come as easily with the color differentiation used above. The dots/circles used for data points is a common feature in charts such as this. One could change the shape to be a star, hexagon or other symbol, however, this can cause the chart to look overly dramatic and take away from the data being presented. However, if the user is looking to highlight outliers or a certain data point in each chart you could change a single data point (in this case the outlier) to be a star whereas the the data points are still a circle. This would aid in showcasing said outlier.</p>
+<p>The next part of the assignment asks us to “finetune” the charts but without utilizing another software package. I first show the code that I changed and then the results. The first thing I did was change the data point color to red with a blue outline. I did this due to my preference of color, ease on the eyes and to create a larger contrast in color (especially for plot x4). Next I increased the size of the data points, this allow the user to see them easier. With the earlier change in color and outline x4 becomes more readable. Had I not changed to a greater contrast, the larger size in x4 would have caused the data points to look like a straight line. Next I changed the x and y axis to start at 2 versus 3, this moved the majority of the data closer to the center of the charts. Finally, I replaced the blue regression line with royal blue. I confess, it was super minor but I prefer the color. Below the code you can see my results.</p>
+<p><em>for(i in 1:4) {</em></p>
+<p><em>ff[2:3] &lt;- lapply(paste0(c(“y”,“x”), i), as.name)</em></p>
+<p><em>plot(ff, data = anscombe, col = “blue”, pch = 21, bg = “red”, cex = 1.5,</em></p>
+<p><em>xlim = c(2, 19), ylim = c(2, 13))</em></p>
+<p><em>abline(mods[[i]], col = “royalblue”)</em></p>
+<p><em>}</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="anscombechange.jpeg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>The final ask of the assignment is to do the same exercise but with ggplot utilizing Tidyverse package. I should point out that the esteemed Dr.&nbsp;Brandt recently told me that friends don’t let friends Tidyverse.</p>
+<p>The first plot shows the same four models from above in black and white.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="gg5.jpeg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>The plot above was created with the code below.</p>
+<p><em>lm1 &lt;- ggplot(data = anscombe, mapping = aes(x = x1,y = y1))+</em></p>
+<p><em>geom_point() + geom_line()</em></p>
+<p><em>lm2 &lt;- ggplot(data = anscombe, mapping = aes(x = x2,y = y2))+</em></p>
+<p><em>geom_point() + geom_line()</em></p>
+<p><em>lm3 &lt;- ggplot(data = anscombe, mapping = aes(x = x3,y = y3))+</em></p>
+<p><em>geom_point() + geom_line()</em></p>
+<p><em>lm4 &lt;- ggplot(data = anscombe, mapping = aes(x = x4,y = y4))+</em></p>
+<p><em>geom_point() + geom_line()</em></p>
+<p><em>lm1 / lm2 / lm3 /lm4</em></p>
+<p>Now let’s add some color to it. Looking at the code below I simply re-created the same four plots using the ggplot function within the Tidyverse package. I created the points to again be red (without the outline) and the line to be Blue. One difference here is that I did not use a trend line but instead a connecting line between the points on the axis. The outputs are below.</p>
+<p><em>ggplot(data = anscombe, mapping = aes(x1, y1))+</em></p>
+<p><em>geom_point(color=“red”) + geom_line(color=“blue”)</em></p>
+<p><em>ggplot(data = anscombe, mapping = aes(x2, y2))+</em></p>
+<p><em>geom_point(color=“red”) + geom_line(color=“blue”)</em></p>
+<p><em>ggplot(data = anscombe, mapping = aes(x3, y3))+</em></p>
+<p><em>geom_point(color=“red”) + geom_line(color=“blue”)</em></p>
+<p><em>ggplot(data = anscombe, mapping = aes(x4, y4))+</em></p>
+<p><em>geom_point(color=“red”) + geom_line(color=“blue”)</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="gg1.jpeg" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../../Rplot1.jpeg" class="img-fluid figure-img"></p>
+<p><img src="gg2.jpeg" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>Of all of the various graphics above, the perspective plot is my favorite. It is the lower left left which shows a three dimensional plot (it appears to be a circular mouth with a tongue coming out). My only issue with it would be utilizing it properly to show the data. Perspective plots done in a color gradient can be a powerful graphic when properly utilized.</p>
+<p><img src="gg3.jpeg" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="gg4.jpeg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>You will notice that the connecting line works fine for the first three plots, however, for the final plot is does not work.</p>
 
 
 
